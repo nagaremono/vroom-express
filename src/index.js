@@ -134,7 +134,7 @@ const sizeCheckCallback = function (maxLocationNumber, maxVehicleNumber) {
 // Cli wrapper and associated callback.
 const spawn = require('child_process').spawn;
 
-const vroomCommand = args.path + 'vroom';
+const vroomCommand = 'python3 /vroom-scripts/src/asap.py'
 const options = [];
 options.push('-r', args.router);
 if (args.router !== 'libosrm') {
